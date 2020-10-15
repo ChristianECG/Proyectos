@@ -22,6 +22,9 @@ public class Rellenar {
             letras[i] = sc.next().charAt(0);//Guardar primer caracter --charArt
         }
         //Mostrar
+        System.out.println("\nLos caracteres son: ");
+        for(int i=0;i<elementos;i++){
+            System.out.print(letras[i]+ " ");
         }
     }
 
