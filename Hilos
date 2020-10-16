@@ -1,0 +1,39 @@
+package numeroaleatoriohilos;
+import java.lang.Thread;
+import java.util.Random;
+
+public class HiloGeneradorNumeroAleatorio implements Runnable{
+     public static final     int MAX=10, INICIO=0, FINAL=100;
+     private Thread hilo;
+     private String msg;
+
+     public HiloGeneradorNumeroAleatorio(String m){
+        msg=m;
+        hilo=new Thread(this);
+        hilo.start();
+     }
+     @Override
+     public void run(){
+
+        System.out.println("iniciando hilo ..."+this.msg);
+
+        try{
+
+           for(int i=0;i<=MAX;i++){    
+           Thread.sleep(100);
+           System.out.println(this.msg + ": No. aleatorio generado: " + aleatorio());
+          }
+
+        }catch(InterruptedException ex){
+                System.err.println(ex.getCause());
+        }
+
+        System.out.println("Finalizando hilo..." + this.msg);
+     }
+
+     public long aleatorio(){
+        double numero;
+        numero = Math.floor(Math.random() *(FINAL)+INICIO);      
+        return (long) numero;
+     }
+}
