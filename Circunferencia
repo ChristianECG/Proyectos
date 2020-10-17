@@ -1,0 +1,30 @@
+package CapituloDos;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Marcos Mer
+ */
+public class DosVeintiOcho {
+
+    
+    public static void main(String[] args) {
+        
+        Scanner numero = new Scanner(System.in);
+        float radio,diametro,circunferencia,area;
+        
+        System.out.println("Ingresa el radio de tu circunferencia: ");
+        radio = numero.nextFloat();
+        
+        diametro = radio*2;
+        circunferencia = (float) (Math.PI*diametro);
+        //area = (float) Math.PI(Math.pow(radio,2));
+        area = (float) (Math.PI * Math.pow(radio,2));
+        
+        System.out.println("El diametro es: "+diametro+
+                           "La circunferencia: "+circunferencia+
+                           "EL area es: "+area);
+    }
+    
+}
