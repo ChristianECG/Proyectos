@@ -1,0 +1,7 @@
+C:\Users\goku_\source\repos\Threads\Threads\bin\Debug\Threads.exe.config
+C:\Users\goku_\source\repos\Threads\Threads\bin\Debug\Threads.exe
+C:\Users\goku_\source\repos\Threads\Threads\bin\Debug\Threads.pdb
+C:\Users\goku_\source\repos\Threads\Threads\obj\Debug\Threads.csprojAssemblyReference.cache
+C:\Users\goku_\source\repos\Threads\Threads\obj\Debug\Threads.csproj.CoreCompileInputs.cache
+C:\Users\goku_\source\repos\Threads\Threads\obj\Debug\Threads.exe
+C:\Users\goku_\source\repos\Threads\Threads\obj\Debug\Threads.pdb
